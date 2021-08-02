@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EFE6EF ;
+}
+
+* {
+  box-sizing: border-box;
+}
+.navbar
+{
+  background-color:#071A71;
+  font-size: 18px;
+  border-color:#C7CCE3; 
+}
+.navbar-inverse .navbar-brand
+{
+  color: whitesmoke;
+  font-family: Arial;
+  font-weight: bold;
+}
+.navbar-inverse .navbar-nav a:hover
+{
+  color: #071A71 !important;
+  /*background-color: #43A9D3;*/
+  background-color: #C7CCE3 !important;
+  font-family: 'Arvo', serif;
+}
+.navbar-inverse .navbar-nav li a
+{
+   font-family: 'Arvo', serif;
+   color: #C8EFF4 ;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 10;
+    width:100%;
+    height:100%;
+    float: left;
+}
+
+.carousel-caption .a {
+    vertical-align: middle;
+    text-align:center;
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media screen and (max-width: 411px){
+     .carousel-caption .a {
+        font-size: 30px }}
+@media screen and (width: 768px){
+     .carousel-caption .a {
+        font-size: 50px ;
+        padding-left: 3px;}}
+.carousel-caption .b{
+    vertical-align: middle;
+    text-align:center;
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media screen and (max-width: 411px){
+     .carousel-caption .b {
+        font-size: 25px ;
+        padding-left: 3px;}}
+@media screen and (width: 768px){
+     .carousel-caption .b {
+        font-size: 50px ;
+        padding-left: 3px;}}
+.carousel-caption .c {
+    vertical-align: middle;
+    text-align:center;
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+    color: #0B1A62;
+    text-shadow: 2px 2px 8px #91F4F4;
+    float: left;
+    padding-top: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media screen and (max-width: 411px){
+     .carousel-caption .c {
+        font-size: 25px;
+        padding-top: 150px;
+    padding-left: 3px;
+    padding-right: 5px; }}
+    @media screen and (width: 768px){
+     .carousel-caption .c {
+        font-size: 50px ;
+        padding-top: 350px;
+        padding-left: 3px;}}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 0;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+ }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.95);
+  padding: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+  font-size: 40px;
+  height: 160px;
+  font-family:'Passion One', cursive;
+}
+.f
+{
+  background-color: #4AEB8C  ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+.body1 { 
+  background-color: #52ACFF;
+  background-image: linear-gradient(180deg, #52ACFF 25%, #57F4EB  100%);
+ }
+
+
+/* center the blockquote in the page */
+.blockquote-wrapper1 {
+   display: flex;
+   height: 40vh;
+   padding: 0 20px;
+}
+.blockquote1:before
+ {
+    position: absolute;
+    content: "“";
+    color: rgba(255, 255, 255, 1);
+    font-size: 6rem;
+    line-height: 0;
+    bottom: 120px;
+    right: 480px;
+}
+/* Blockquote main style */
+.blockquote1 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 30px 0;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    margin: 80px auto;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+.blockquote1 h1 {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+}
+
+/* Blockquote right double quotes */
+.blockquote1:after {
+    position: absolute;
+    content: "”";
+    color: rgba(255, 255, 255, 1);
+    font-size: 6rem;
+    line-height: 0;
+    bottom: -43px;
+    right: 20px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+    .blockquote1 h1 {
+        font-size: 40px;
+   }
+
+}
+
+/* Blockquote subheader */
+.blockquote1 h4 {
+    position: relative;
+    color: #292a2b;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding-top: 20px;
+    z-index: 1;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: auto;
+  height: 300px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+ .container2 {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 460px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 81%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 2vw;
+  overflow: hidden;
+  padding-top: 3px;
+  padding-left: 3px;
+  font-family: 'Bree Serif', serif;
+}
+@media screen and (max-width: 411px){
+    .text {
+        font-size: 40px }}
+@media screen and (max-width: 768px){
+    .text {
+        font-size: 20px }}
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.cards
+{
+  background-color: #950D1F;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 30px;
+  float: center !important;
+  align-items: center !important;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.boxy {
+  margin: 0px;
+  padding-left: 60px;
+  background: #060C21;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  width: 96vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
+  grid-gap: 3vw;
+}
+
+.box {
+  padding-left: 30px;
+  position: relative;
+  height: 30vh;
+  background: #060C21;
+  border: 1px solid whitesmoke;
+  margin: 2vw;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #FFF;
+  transform: skew(2deg, 2deg);
+  z-index: -1;
+}
+
+.box:nth-child(n+1)::before {
+  background: linear-gradient(315deg, #FF0057, #E64A19);
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  pointer-events: none;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+footer{
+  bottom: 0;
+}
+ 
+@media (max-height:700px){
+  footer { position: static; }
+}
+ 
+ 
+.footer-distributed{
+  background-color:#071A71;
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-distributed .footer-left{
+  width: 30%;
+  text-align: left;
+  float: left;
+}
+
+.footer-distributed .footer-left img{
+  width: 40%;
+  align-items: left;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+ 
+
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+  text-align: center;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 42px;
+  vertical-align: middle;
+}
+  
+.footer-distributed .footer-center p a{
+  color:  #e0ac1c;
+  text-decoration: none;;
+}
+  
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+  width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+
+@media (max-width: 880px) {
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+ }
+
+.a
+{
+  padding-left: 60px;
+}
